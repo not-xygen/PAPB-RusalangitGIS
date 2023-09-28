@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:rusalangit_gis/screens/register_screen.dart';
-
-import 'home_screen.dart';
+import 'package:rusalangit_gis/screens/home_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -15,6 +14,7 @@ class _LoginScreenState extends State<LoginScreen> {
   TextEditingController usernameController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
 
+  // ignore: unused_element
   Future<void> _login(context) async {
     const String baseUrl = 'http://localhost:5000/api/login';
 

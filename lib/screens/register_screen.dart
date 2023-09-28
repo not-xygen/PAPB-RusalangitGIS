@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'login_screen.dart';
-import 'home_screen.dart';
+import 'package:rusalangit_gis/screens/login_screen.dart';
+import 'package:rusalangit_gis/screens/home_screen.dart';
 
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({Key? key}) : super(key: key);
@@ -15,6 +15,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
   TextEditingController passwordController = TextEditingController();
   TextEditingController passwordConfirmController = TextEditingController();
 
+  // ignore: unused_element
   Future<void> _register(context) async {
     const String baseUrl = 'http://localhost:5000/api/Register';
 
